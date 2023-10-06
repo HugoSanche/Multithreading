@@ -18,7 +18,7 @@ public class Main {
                 System.out.println("A critical error happened in thread "+t.getName()+" error is "+e.getMessage());
             }
         });
-        
+
         thread.run();
         System.out.println("We are in thread "+Thread.currentThread().getName()+ " after starting a new thread");
 
