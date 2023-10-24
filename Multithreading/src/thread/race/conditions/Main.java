@@ -46,11 +46,30 @@ public class Main {
     private static class InventoryCounter{
         private int items=0;
 
-        public void increment(){
+        Object lock=new Object();
+
+
+        /* synchronized all method
+        public synchronized void  increment(){ //sincroniza tanto el methodo increment como el decrement
             items++;
         }
-        public void decrement(){
+        public synchronized void decrement(){
             items--;
+        }
+        */
+
+        //the advantage of this synchronized is because only block a part of the code, not all method
+        public  void  increment(){
+            synchronized (this.lock){
+                items++;//only this part its synchronized
+            }
+            //wil be other code not synchronized and blocked
+            //other code
+        }
+        public  void decrement(){
+            synchronized (this.lock){
+                items--;
+            }
         }
         public int  getItems(){
             return items;
