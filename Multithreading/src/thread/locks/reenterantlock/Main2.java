@@ -1,8 +1,30 @@
+
+
+package thread.locks.reenterantlock;
+
+
+import java.awt.*;
+import java.beans.EventHandler;
+import java.util.HashMap;
+import java.util.Map;
+import java.util.Random;
+import java.util.concurrent.locks.Lock;
+import java.util.concurrent.locks.ReentrantLock;
+
+public class Main2{
+
+}
 /*
- * Copyright (c) 2018-2023. Michael Pogrebinsky - Top Developer Academy
- * https://topdeveloperacademy.com
- * All rights reserved
- */
+import java.awt.*;
+import java.beans.EventHandler;
+import java.util.HashMap;
+import java.util.Map;
+import java.util.Random;
+import java.util.concurrent.locks.Lock;
+import java.util.concurrent.locks.ReentrantLock;
+
+
+
 package thread.locks.reenterantlock;
 
 import javafx.animation.AnimationTimer;
@@ -25,12 +47,7 @@ import java.util.*;
 import java.util.concurrent.locks.Lock;
 import java.util.concurrent.locks.ReentrantLock;
 
-/**
- * ReentrantLock Part 2 - User Interface Application example
- * https://www.udemy.com/java-multithreading-concurrency-performance-optimization
- * <p>
- * See README.md for instruction on how to run the application
- */
+
 public class Main2 extends Application {
     public static void main(String[] args) {
         launch(args);
@@ -40,10 +57,10 @@ public class Main2 extends Application {
     public void start(Stage primaryStage) {
         primaryStage.setTitle("Cryptocurrency Prices");
 
-        GridPane grid = createGrid();
-        Map<String, Label> cryptoLabels = createCryptoPriceLabels();
+  //      GridPane grid = createGrid();
+    //    Map<String, Label> cryptoLabels = createCryptoPriceLabels();
 
-        addLabelsToGrid(cryptoLabels, grid);
+//        addLabelsToGrid(cryptoLabels, grid);
 
         double width = 300;
         double height = 250;
@@ -258,3 +275,4 @@ public class Main2 extends Application {
         }
     }
 }
+*/
